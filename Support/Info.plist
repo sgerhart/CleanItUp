@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleDisplayName</key>
+    <string>CleanItUp</string>
+    <key>CFBundleExecutable</key>
+    <string>CleanItUp</string>
+    <key>CFBundleIdentifier</key>
+    <string>io.dentro.cleanitup</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>CleanItUp</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSDesktopFolderUsageDescription</key>
+    <string>CleanItUp measures what's using space in your Desktop folder.</string>
+    <key>NSDocumentsFolderUsageDescription</key>
+    <string>CleanItUp measures what's using space in your Documents folder.</string>
+    <key>NSDownloadsFolderUsageDescription</key>
+    <string>CleanItUp finds old and large files in your Downloads folder.</string>
+    <key>NSRemovableVolumesUsageDescription</key>
+    <string>CleanItUp measures what's using space on external drives.</string>
+    <key>NSNetworkVolumesUsageDescription</key>
+    <string>CleanItUp measures what's using space on network drives.</string>
+</dict>
+</plist>
