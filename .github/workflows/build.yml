@@ -30,5 +30,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: CleanItUp
-          path: build/CleanItUp.zip
+          path: build/CleanItUp.dmg
           if-no-files-found: error

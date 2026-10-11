@@ -22,5 +22,11 @@ cp Support/Info.plist "$APP/Contents/Info.plist"
 codesign --force --deep --sign - "$APP"
 codesign --verify --verbose "$APP"
 
-ditto -c -k --keepParent "$APP" build/CleanItUp.zip
-echo "Built build/CleanItUp.zip"
+# Disk image with an Applications shortcut, the usual way to install a Mac app.
+STAGING="build/dmg"
+mkdir -p "$STAGING"
+cp -R "$APP" "$STAGING/"
+ln -s /Applications "$STAGING/Applications"
+hdiutil create -volname CleanItUp -srcfolder "$STAGING" -ov -format UDZO build/CleanItUp.dmg
+rm -rf "$STAGING"
+echo "Built build/CleanItUp.dmg"

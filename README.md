@@ -21,7 +21,7 @@ A native macOS app (Swift and SwiftUI) that shows what's using your storage, how
 ## Install a build
 
 1. Open the latest successful run under the repo's **Actions** tab, and download the **CleanItUp** artifact.
-2. Unzip it and drag `CleanItUp.app` to Applications.
+2. Your browser may unzip it for you; otherwise double-click the download. Open `CleanItUp.dmg` and drag CleanItUp to Applications.
 3. The app isn't notarized yet, so macOS blocks the first launch. Open it once, then go to **System Settings → Privacy & Security** and click **Open Anyway**. (Or run `xattr -dr com.apple.quarantine /Applications/CleanItUp.app`.)
 4. For a complete picture, add CleanItUp under **System Settings → Privacy & Security → Full Disk Access**. Without it, some folders under `~/Library` are skipped and the app tells you how many.
 
@@ -35,7 +35,7 @@ Requires macOS 14+ and Xcode 15+ (Swift 5.9).
 swift build          # debug build
 swift test           # core logic tests
 swift run CleanItUp  # launch without bundling
-./scripts/bundle.sh  # universal CleanItUp.app + zip in build/
+./scripts/bundle.sh  # universal CleanItUp.app + .dmg in build/
 ```
 
 Or open `Package.swift` in Xcode.
